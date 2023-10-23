@@ -30,6 +30,16 @@ jobs:
 
       - name: apt
         run: sudo apt-get install gettext
+      - name: apt1
+        run: sudo apt-get update
+      - name: apt2
+        run: sudo apt-get install build-essential
+      - name: apt3
+        run: sudo apt-get install libstdc++6
+      - name: apt4
+        run: sudo apt-get install aidl 
+      - name: apt5
+        run: buildozer android update -v2
 
       - name: Build with Buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
