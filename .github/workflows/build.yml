@@ -31,7 +31,10 @@ jobs:
       - name: install cython
         run: pip install Cython
         shell: bash
-          
+
+      - name: gettext
+        run: sudo apt-get install gettext
+        
       - name: Build with Buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
